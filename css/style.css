@@ -345,10 +345,11 @@ header .info {
   font-size: 17px;
 }
 #photos-line {
-  background: url('../img/photos-line.jpg') center top;
-  background-size: cover;
+  margin-bottom: 5px;
 }
 #photos-line .container {
+  background: url('../img/photos-line.jpg') center top;
+  background-size: cover;
   min-height: 200px;
 }
 #hdmi {
