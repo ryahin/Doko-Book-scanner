@@ -9,6 +9,7 @@ nav .consultation {
   margin-left: 72px;
   width: 200px;
   min-height: 100px;
+  text-align: center;
 }
 nav .consultation .phone {
   display: block;

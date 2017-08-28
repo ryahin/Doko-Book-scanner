@@ -4,7 +4,7 @@ var browserSync = require('browser-sync').create();
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-    return gulp.src('less/style.less')
+    return gulp.src(['less/style.less', 'less/responsive.less'])
         .pipe(less())
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
