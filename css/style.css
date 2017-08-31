@@ -109,6 +109,9 @@ header .info {
   margin-bottom: 70px;
   position: relative;
 }
+#book-spread .book-wrapper > img {
+  max-width: 50%;
+}
 #book-spread .book-wrapper .separator {
   height: 100%;
   width: 50%;
