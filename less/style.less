@@ -11,7 +11,7 @@ h2 {
 nav {
     .consultation {
         padding-top: 10px;
-        margin-left: 72px;
+        margin-left: 40px;
         width: 200px;
         min-height: 100px;
         text-align: center;
@@ -44,15 +44,11 @@ nav {
 }
 
 .navbar>.container .navbar-brand {
-    background-color: @clean-theme;
-    color: #000;
-    font-size: 30px;
-    padding: 0;
-    border-radius: 5px;
-    height: 30px;
-    line-height: 30px;
+    width: 130px;
     margin-left: 10px;
-    margin-top: 15px;
+    img {
+        max-width: 100%;
+    }
 }
 
 .navbar-inverse .navbar-nav>li>a:focus {
@@ -120,9 +116,38 @@ header {
     .container {
         min-height: 300px;
     }
-    img {
+    .book-wrapper {
         margin-top: 100px;
         margin-bottom: 70px;
+        position: relative;
+        .separator {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            transition: all 2s;
+            #separator-line {
+                height: 100%;
+            }
+            #scanned-page {
+                transition: all 2s;
+                height: 100%;
+                position: absolute;
+                right: -100%;
+            }
+        }
+        &:hover { 
+            .separator {
+                left: 50%;
+                #scanned-page {
+                    right: 0;
+                }
+            }
+        }
+    }
+    img {
         max-width: 100%;
     }
 }
@@ -242,6 +267,7 @@ header {
             text-align: left;
             margin-left: 30px;
             margin-right: 30px;
+            font-size: 15px;
         }
         a {
             width: 100%;
@@ -374,7 +400,7 @@ header {
     background-size: contain;
     .bg-image {
         background: url('../img/hdmi-bg.jpg') center top no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .container {
         min-height: 590px;
@@ -402,6 +428,10 @@ header {
     }
     p {
         text-align: center;
+        &.send {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
     }
     .form-group {
         width: 100%;
@@ -412,7 +442,7 @@ header {
     }
     button {
         display: block;
-        margin: 30px auto;
+        margin: 30px auto 15px;
         padding: 15px;
         background-color: #DD2235;
     }
@@ -421,7 +451,7 @@ header {
 footer {
     .container {
         padding-top: 60px;
-        min-height: 300px;
+        min-height: 200px;
     }
     ul {
         padding-left: 0;
@@ -449,4 +479,12 @@ footer {
 
 .navbar-inverse {
     background-color: #000;
+}
+
+.gradient-top-gray {
+    background: linear-gradient(to bottom, #aeafaf, #f2f2f2);
+}
+
+.gradient-bottom-gray {
+    background: linear-gradient(to top, #aeafaf, #f2f2f2);
 }
