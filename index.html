@@ -39,9 +39,9 @@
         <!--/.navbar-collapse -->
         </div>
     </nav>
-    <header class="dark-bg">
-        <div class="right-bg"></div>
-        <div class="container">
+    <header class="light-bg" data-paroller-factor="0.2">
+        <div class="right-bg" data-paroller-factor="0.2"></div>
+        <div class="container" data-paroller-factor="0.2">
             <!-- <img src="img/header-bg.jpg" alt=""> -->
             <div class="info">
                 <p>
@@ -76,14 +76,14 @@
             </div>
         </div>
     </section>
-    <section id="book-spread" class="dark-bg">
+    <section id="book-spread" class="dark-bg" data-paroller-factor="0.6">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="book-wrapper">
                         <img src="img/book/photo-page.png" alt="">
                         <div class="separator">
-                            <img src="img/book/separator.png" alt="">
+                            <img id="separator-line" src="img/book/separator.png" alt="">
                             <img id="scanned-page" src="img/book/scanned-page.png" alt="">
                         </div>
                     </div>
@@ -107,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section id="options">
+    <section id="options"  data-paroller-factor="0.2">
         <div class="container">
             <!-- <img src="img/options-bg.jpg" alt=""> -->
             <div class="row">
@@ -527,6 +527,7 @@
     <script src="vendor/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="vendor/jquery.paroller.js"></script>
     <script src="js/script.js"></script>
 </body>
 

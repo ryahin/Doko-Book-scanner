@@ -73,7 +73,7 @@ header {
     }
     .container {
         position: relative;
-        background: url('../img/header-bg.jpg') center top;
+        background: url('../img/header-bg.jpg') center top no-repeat;
         background-size: cover;
         min-height: 640px;
         z-index: 1;
@@ -112,7 +112,8 @@ header {
 
 #book-spread {
     background: url('../img/library-bg.jpg') center center;
-    background-size: cover;
+    //background-size: cover;
+    position: relative;
     .container {
         min-height: 300px;
     }
@@ -176,10 +177,8 @@ header {
 }
 
 #options {
-    background-color: #0c0704;
+    background: #0c0704 url('../img/options-bg.jpg') center center no-repeat;
     .container {
-        background: url('../img/options-bg.jpg') center center;
-        background-size: cover;
         min-height: 600px;
     }
     img {

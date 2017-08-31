@@ -8,8 +8,13 @@ $(document).ready(function() {
     });
 
     // Highlight the top nav as scrolling occurs
-	  $('body').scrollspy({
-	    target: '.navbar-fixed-top',
-	    offset: 101
-	  });
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 101
+    });
+    $(window).paroller({
+        factor: 0.6,            // multiplier for scrolling speed and offset
+        type: 'background',     // background, foreground
+        direction: 'vertical' // vertical, horizontal, TODO: diagonal
+    });
 });
