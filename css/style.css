@@ -380,11 +380,11 @@ header .info {
 }
 #hdmi {
   background: url('../img/hdmi-bg-line.png') center top repeat-x;
-  background-size: cover;
+  background-size: contain;
 }
 #hdmi .bg-image {
   background: url('../img/hdmi-bg.jpg') center top no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 #hdmi .container {
   min-height: 590px;
