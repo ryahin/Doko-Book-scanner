@@ -99,6 +99,7 @@ header .info {
 }
 #book-spread {
   background: url('../img/library-bg.jpg') center center;
+  background-size: cover;
   position: relative;
 }
 #book-spread .container {
@@ -379,7 +380,7 @@ header .info {
 }
 #hdmi {
   background: url('../img/hdmi-bg-line.png') center top repeat-x;
-  background-size: contain;
+  background-size: cover;
 }
 #hdmi .bg-image {
   background: url('../img/hdmi-bg.jpg') center top no-repeat;
