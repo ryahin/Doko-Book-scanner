@@ -131,10 +131,12 @@ header .info {
   position: absolute;
   right: -100%;
 }
-#book-spread:hover .book-wrapper .separator {
+#book-spread:hover .book-wrapper .separator,
+#book-spread.show-animation .book-wrapper .separator {
   left: 50%;
 }
-#book-spread:hover .book-wrapper .separator #scanned-page {
+#book-spread:hover .book-wrapper .separator #scanned-page,
+#book-spread.show-animation .book-wrapper .separator #scanned-page {
   right: 0;
 }
 #book-spread img {
@@ -397,7 +399,7 @@ header .info {
   background-size: contain;
 }
 #hdmi .bg-image {
-  background: url('../img/hdmi-bg.jpg') center top no-repeat;
+  background: url('../img/hdmi-bg.png') center top no-repeat;
   background-size: contain;
 }
 #hdmi .container {

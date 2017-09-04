@@ -20,4 +20,16 @@ $(document).ready(function() {
     $('.modal-close').click(function(){
         $('#popup-form').modal('toggle');
     });
+    var bookSpreadOffsetTop = $('#book-spread').offset().top;
+    var bookSpreadHeight = $('#book-spread').height();
+    var viewPortHeight = $( window ).height();
+    var topScroll = bookSpreadOffsetTop - viewPortHeight/2;
+    var bottomScroll = bookSpreadOffsetTop + viewPortHeight/2;
+    $(document).scroll(function(event) {
+        if ($(document).scrollTop() > topScroll && $(document).scrollTop() < bottomScroll) {
+            $('#book-spread').addClass('show-animation');
+        } else {
+            $('#book-spread').removeClass('show-animation');
+        }
+    })
 });
