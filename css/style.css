@@ -8,7 +8,7 @@ nav .consultation {
   padding-top: 10px;
   margin-left: 40px;
   width: 200px;
-  min-height: 100px;
+  min-height: 70px;
   text-align: center;
 }
 nav .consultation .phone {
@@ -26,7 +26,7 @@ nav .consultation .btn {
   margin: 5px 10px 5px 30px;
 }
 nav .container {
-  min-height: 100px;
+  min-height: 70px;
 }
 nav .navbar-nav {
   text-transform: uppercase;
@@ -47,7 +47,7 @@ nav .navbar-nav li {
   color: #9d9d9d;
 }
 header {
-  margin-top: 100px;
+  margin-top: 70px;
   background: url('../img/left-header.jpg') top repeat-x;
   background-size: contain;
   position: relative;
@@ -98,7 +98,7 @@ header .info {
   font-size: 16px;
 }
 #book-spread {
-  background: url('../img/library-bg.jpg') center center;
+  background: #f0f0f0 url('../img/library-bg.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -131,10 +131,10 @@ header .info {
   position: absolute;
   right: -100%;
 }
-#book-spread .book-wrapper:hover .separator {
+#book-spread:hover .book-wrapper .separator {
   left: 50%;
 }
-#book-spread .book-wrapper:hover .separator #scanned-page {
+#book-spread:hover .book-wrapper .separator #scanned-page {
   right: 0;
 }
 #book-spread img {
@@ -206,6 +206,16 @@ header .info {
   -webkit-box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
+}
+#photos .relative-item {
+  position: relative;
+}
+#photos .relative-item .item-description {
+  display: block;
+  position: absolute;
+  right: -10px;
+  bottom: -30px;
+  font-size: 12px;
 }
 #photos .top-item {
   margin-top: 30px;
@@ -331,6 +341,10 @@ header .info {
   padding-bottom: 30px;
   text-align: center;
 }
+#accessory .big-wrapper.center,
+#accessory .small-wrapper.center {
+  text-align: center;
+}
 #accessory .big-wrapper {
   padding: 70px 20px 10px;
 }
@@ -371,11 +385,11 @@ header .info {
   font-size: 17px;
 }
 #photos-line {
+  background: url('../img/photos-line.jpg') center top repeat-x;
+  background-size: contain;
   margin-bottom: 5px;
 }
 #photos-line .container {
-  background: url('../img/photos-line.jpg') center top;
-  background-size: cover;
   min-height: 200px;
 }
 #hdmi {
@@ -400,11 +414,21 @@ header .info {
 }
 #contact-us,
 #contact-us-modal {
+  position: relative;
   margin-top: 70px;
 }
 #contact-us .container,
 #contact-us-modal .container {
   min-height: 300px;
+}
+#contact-us .modal-close,
+#contact-us-modal .modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #aeafaf;
+  z-index: 1;
+  cursor: pointer;
 }
 #contact-us h3,
 #contact-us-modal h3 {

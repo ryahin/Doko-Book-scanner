@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -114,7 +115,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="item-text item-top">
-                        <p><img src="img/rows.png" alt=""> Встроенный ЖК-экран предназначенный для предварительного просмотра изображения с целью правильного позиционирования документа или предмета в поле зрения сканера.</p>
+                        <p><img src="img/rows.png" alt=""> Встроенный ЖК-экран предназначен для предварительного просмотра изображения с целью правильного позиционирования документа или предмета в поле зрения сканера.</p>
                     </div>
                     <div class="item-text">
                         <p><img src="img/rows.png" alt=""> Выносная USB-кнопка сканирования позволяет сделать процесс сканирования более комфортным.</p>
@@ -153,10 +154,13 @@
                     <p>Светодиодная подсветка
                         <br>10 LED-диодов</p>
                 </div>
-                <div class="item-wrapper bottom-item">
+                <div class="item-wrapper bottom-item relative-item">
                     <img src="img/items/5.jpg" alt="">
                     <p>Wi-Fi модуль<sup>*</sup>
                         <br>передача изображений в «облако»</p>
+                    <span class="item-description">
+                        * только в модели DOKO ET16
+                    </span>
                 </div>
             </div>
         </div>
@@ -182,7 +186,7 @@
                     <div class="btns">
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-default">Цена: 39 995Р</a>
+                                <a href="#" class="btn btn-default">Цена: 39 995 &#8381;</a>
                             </div>
                             <div class="col-md-6">
                                 <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#popup-form">Купить</a>
@@ -200,7 +204,7 @@
                     <div class="btns">
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-default">Цена: 29 995Р</a>
+                                <a href="#" class="btn btn-default">Цена: 29 995 &#8381;</a>
                             </div>
                             <div class="col-md-6">
                                 <a href="#" class="btn btn-primary page-scroll" data-toggle="modal" data-target="#popup-form">Купить</a>
@@ -400,13 +404,13 @@
                 <div class="col-md-5">
                     <div class="row">
                         <div class="col-xs-6">
-                            <div class="small-wrapper">
+                            <div class="small-wrapper center">
                                 <img src="img/accessory/2-2.jpg" alt="">
                                 <p>Кнопка сканирования</p>
                             </div>
                         </div>
                         <div class="col-xs-6">
-                            <div class="small-wrapper">
+                            <div class="small-wrapper center">
                                 <img src="img/accessory/2-3.jpg" alt="">
                                 <p>Пульт ДУ</p>
                             </div>
@@ -528,6 +532,7 @@
     <!-- Modal -->
     <div class="modal fade" id="popup-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div id="contact-us-modal" class="modal-dialog" role="document">
+            <i class="fa fa-times fa-2x modal-close" aria-hidden="true"></i>
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="container-fluid">
