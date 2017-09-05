@@ -306,6 +306,13 @@ header .info {
 #comparision td {
   border: 2px solid #222;
 }
+#comparision .first {
+  width: 14%;
+}
+#comparision .second,
+#comparision .third {
+  width: 43%;
+}
 #comparision tr.table-header {
   background-color: #cccccc !important;
 }
