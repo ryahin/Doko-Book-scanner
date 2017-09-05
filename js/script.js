@@ -31,5 +31,5 @@ $(document).ready(function() {
         } else {
             $('#book-spread').removeClass('show-animation');
         }
-    })
+    });
 });
