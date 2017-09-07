@@ -325,20 +325,6 @@ header .info {
 #comparision td {
   padding: 5px;
 }
-#comparision .documentation {
-  padding-bottom: 40px;
-}
-#comparision .documentation ul {
-  list-style-type: none;
-}
-#comparision .documentation ul li {
-  padding-bottom: 10px;
-}
-#comparision .documentation a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #333;
-}
 #accessory .container {
   min-height: 770px;
 }
@@ -483,6 +469,20 @@ header .info {
   margin: 30px auto 15px;
   padding: 15px;
   background-color: #DD2235;
+}
+#documentation {
+  padding-bottom: 40px;
+}
+#documentation ul {
+  list-style-type: none;
+}
+#documentation ul li {
+  padding-bottom: 10px;
+}
+#documentation a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
 }
 footer .container {
   padding-top: 60px;
