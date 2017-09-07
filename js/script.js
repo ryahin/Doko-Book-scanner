@@ -18,7 +18,10 @@ $(document).ready(function() {
         direction: 'vertical' // vertical, horizontal, TODO: diagonal
     });
     $('.modal-close').click(function(){
-        $('#popup-form').modal('toggle');
+        $('#popup-form').modal('toggle'); 
+    });
+    $('.buy-modal-close').click(function(){
+        $('#buy-form').modal('toggle'); 
     });
     var bookSpreadOffsetTop = $('#book-spread').offset().top;
     var bookSpreadHeight = $('#book-spread').height();
@@ -31,5 +34,8 @@ $(document).ready(function() {
         } else {
             $('#book-spread').removeClass('show-animation');
         }
+    });
+    $('.politics').click(function(){
+        $('.politics-info').fadeToggle();
     });
 });
