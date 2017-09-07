@@ -325,6 +325,19 @@ header .info {
 #comparision td {
   padding: 5px;
 }
+#comparision .documentation {
+  padding-bottom: 40px;
+}
+#comparision .documentation ul {
+  list-style-type: none;
+}
+#comparision .documentation ul li {
+  padding-bottom: 10px;
+}
+#comparision .documentation a {
+  text-decoration: none;
+  font-size: 16px;
+}
 #accessory .container {
   min-height: 770px;
 }
