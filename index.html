@@ -189,7 +189,7 @@
                                 <a href="#" class="btn btn-default">Цена: 39 995 &#8381;</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#buy-form">Купить</a>
+                                <a href="#" class="btn btn-primary buy-button" data-model="1" data-toggle="modal" data-target="#buy-form">Купить</a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                                 <a href="#" class="btn btn-default">Цена: 29 995 &#8381;</a>
                             </div>
                             <div class="col-md-6">
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#buy-form">Купить</a>
+                                <a href="#" class="btn btn-primary buy-button" data-model="2" data-toggle="modal" data-target="#buy-form">Купить</a>
                             </div>
                         </div>
                     </div>
@@ -561,7 +561,10 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="model" placeholder="Модель N" name="model">
+                                        <select class="form-control" id="model" placeholder="Модель N" name="model">
+                                          <option value="1">DOKO ET16</option>
+                                          <option value="2">DOKO BS16</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-12">

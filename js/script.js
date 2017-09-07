@@ -35,7 +35,13 @@ $(document).ready(function() {
             $('#book-spread').removeClass('show-animation');
         }
     });
-    $('.politics').click(function(){
+    $('.buy-button').click(function(e) {
+        e.preventDefault();
+        var selectedModel = $(this).attr('data-model');
+        $('#model').val(selectedModel);
+    });
+    $('.politics').click(function(e){
+        e.preventDefault();
         $('.politics-info').fadeToggle();
     });
 });

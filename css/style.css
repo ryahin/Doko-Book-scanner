@@ -471,7 +471,10 @@ header .info {
 }
 #contact-us .form-group input,
 #contact-us-modal .form-group input,
-#buy-modal .form-group input {
+#buy-modal .form-group input,
+#contact-us .form-group select,
+#contact-us-modal .form-group select,
+#buy-modal .form-group select {
   width: 100%;
   margin-top: 30px;
 }
