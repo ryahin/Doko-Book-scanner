@@ -482,7 +482,7 @@ header .info {
 #contact-us-modal button,
 #buy-modal button {
   display: block;
-  margin: 30px auto 15px;
+  margin: 15px auto;
   padding: 15px;
   background-color: #DD2235;
 }
@@ -546,4 +546,8 @@ footer .btn {
 }
 .modal-open .navbar-fixed-top {
   padding-right: 17px;
+}
+#form-message {
+  margin-top: 10px;
+  padding: 5px;
 }

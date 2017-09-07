@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="img/doko-logo.png" alt=""></a>
+                <a class="navbar-brand page-scroll" href="#home"><img src="img/doko-logo.png" alt=""></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <div class="consultation navbar-right">
@@ -41,7 +41,7 @@
         <!--/.navbar-collapse -->
         </div>
     </nav>
-    <header class="light-bg" data-paroller-factor="0.2">
+    <header class="light-bg" data-paroller-factor="0.2" id="home">
         <div class="right-bg" data-paroller-factor="0.2"></div>
         <div class="container" data-paroller-factor="0.2">
             <!-- <img src="img/header-bg.jpg" alt=""> -->
@@ -552,7 +552,7 @@
                     <div class="container-fluid">
                         <h3>Заявка</h3>
                         <p>Вы можете разместить заявку на нужную модель сканера DOKO, заполнив следующую форму. (Или просто напишите нам по адресу <b>info@doc-cam.ru</b> или позвоните к нам в офис по телефону <b>(495) 366-90-06</b> и <b>366-45-08</b>.)</p>
-                        <form class="form-inline">
+                        <form class="form-inline" id="buy-selected-model" action="submit.php" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -561,9 +561,9 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <select class="form-control" id="model" placeholder="Модель N" name="model">
-                                          <option value="1">DOKO ET16</option>
-                                          <option value="2">DOKO BS16</option>
+                                        <select class="form-control" id="model" name="model">
+                                            <option value="1">DOKO ET16</option>
+                                            <option value="2">DOKO BS16</option>
                                         </select>
                                     </div>
                                 </div>
@@ -571,9 +571,10 @@
                                     <div class="form-group">
                                         <textarea class="form-control" id="order_body" name="order_body" placeholder="Сообщение"></textarea>
                                     </div>
-                                    <button type="submit" class="btn btn-danger">Отправить заявку</button>
                                     <div class="row">
                                         <div class="col-sm-8 col-sm-offset-2">
+                                            <div id="form-message"></div>
+                                            <button id="button-send-by" type="submit" class="btn btn-danger">Отправить заявку</button>
                                             <p class="send">
                                                 Нажимая кнопку "Отправить заявку", вы соглашаетесь с <a href="#" class="politics">политикой конфиденциальности</a>
                                             </p>
@@ -589,6 +590,7 @@
         </div>
     </div>
     <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/ui-scroll-easing.js"></script>
     <script src="vendor/jquery.paroller.min.js"></script>
