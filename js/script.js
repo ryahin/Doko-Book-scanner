@@ -75,7 +75,10 @@ $(document).ready(function() {
                 $(form).serialize(),
                 function(data) {
                     if (data.message) {
-                        $('#form-message').html(data.message);
+                        $('#form-message').html(data.message).css({
+                            'margin-top': '10px',
+                            'padding': '5px'
+                        });
                     }
                     if (data.success) {
                         $('#form-message').removeClass('alert-danger');
