@@ -256,8 +256,9 @@ header {
 }
 
 #models {
-    background: #080609 url('../img/models-bg.jpg') center top no-repeat;
+    background: #080609 url('../img/models-bg.jpg') center -50% no-repeat;
     background-size: contain;
+    padding-top: 150px;
     .container {
         min-height: 780px;
     }
@@ -265,7 +266,11 @@ header {
         text-align: center;
         margin: 50px 20px 0 20px;
         background-color: @clean-theme;
+        opacity: 0.9;
         .shadow;
+        &:hover {
+            opacity: 1;
+        }
         img {
             max-height: 300px;
         }
@@ -469,10 +474,13 @@ header {
         }
     }
     .glad-to-help {
-        width: 140px;
+        width: 170px;
         margin: 5px auto;
         p {
             text-align: right;
+            b {
+                font-size: 20px;
+            }
         }
     }
     .form-group {

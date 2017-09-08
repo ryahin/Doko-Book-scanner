@@ -239,8 +239,9 @@ header .info {
   max-width: 100%;
 }
 #models {
-  background: #080609 url('../img/models-bg.jpg') center top no-repeat;
+  background: #080609 url('../img/models-bg.jpg') center -50% no-repeat;
   background-size: contain;
+  padding-top: 150px;
 }
 #models .container {
   min-height: 780px;
@@ -249,6 +250,7 @@ header .info {
   text-align: center;
   margin: 50px 20px 0 20px;
   background-color: #ffffff;
+  opacity: 0.9;
   cursor: pointer;
   transition: all 0.5s;
   -webkit-box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.33);
@@ -259,6 +261,9 @@ header .info {
   -webkit-box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
+}
+#models .item-wrapper:hover {
+  opacity: 1;
 }
 #models .item-wrapper img {
   max-height: 300px;
@@ -471,13 +476,18 @@ header .info {
 #contact-us .glad-to-help,
 #contact-us-modal .glad-to-help,
 #buy-modal .glad-to-help {
-  width: 140px;
+  width: 170px;
   margin: 5px auto;
 }
 #contact-us .glad-to-help p,
 #contact-us-modal .glad-to-help p,
 #buy-modal .glad-to-help p {
   text-align: right;
+}
+#contact-us .glad-to-help p b,
+#contact-us-modal .glad-to-help p b,
+#buy-modal .glad-to-help p b {
+  font-size: 20px;
 }
 #contact-us .form-group,
 #contact-us-modal .form-group,
