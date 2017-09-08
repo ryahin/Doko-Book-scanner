@@ -470,7 +470,7 @@ header .info {
 #contact-us p.send,
 #contact-us-modal p.send,
 #buy-modal p.send {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 #contact-us .glad-to-help,
@@ -520,8 +520,17 @@ header .info {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.politics-info {
+#contact-us .politics-info,
+#contact-us-modal .politics-info,
+#buy-modal .politics-info {
   display: none;
+  text-align: justify;
+}
+#contact-us ul,
+#contact-us-modal ul,
+#buy-modal ul {
+  width: 240px;
+  margin: 10px auto;
 }
 #documentation {
   padding-bottom: 40px;
