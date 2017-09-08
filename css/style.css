@@ -468,6 +468,17 @@ header .info {
   font-size: 14px;
   margin-bottom: 10px;
 }
+#contact-us .glad-to-help,
+#contact-us-modal .glad-to-help,
+#buy-modal .glad-to-help {
+  width: 140px;
+  margin: 5px auto;
+}
+#contact-us .glad-to-help p,
+#contact-us-modal .glad-to-help p,
+#buy-modal .glad-to-help p {
+  text-align: right;
+}
 #contact-us .form-group,
 #contact-us-modal .form-group,
 #buy-modal .form-group {
