@@ -239,8 +239,8 @@ header .info {
   max-width: 100%;
 }
 #models {
-  background: #080609 url('../img/models-bg-3.jpg') center top no-repeat;
-  background-size: contain;
+  background: #080609 url('../img/models-bg-4.jpg') center top no-repeat;
+  background-size: cover;
   padding-top: 150px;
 }
 #models .container {
