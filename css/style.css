@@ -240,6 +240,7 @@ header .info {
 }
 #models {
   background: #080609 url('../img/models-bg-repeat-2.jpg') center top repeat-x;
+  background-size: contain;
 }
 #models .container {
   min-height: 780px;
