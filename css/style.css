@@ -522,11 +522,18 @@ header .info {
 #contact-us-modal .politics-info,
 #buy-modal .politics-info {
   display: none;
-  text-align: justify;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  padding: 10px;
 }
-#contact-us ul,
-#contact-us-modal ul,
-#buy-modal ul {
+#contact-us .politics-info > p,
+#contact-us-modal .politics-info > p,
+#buy-modal .politics-info > p {
+  text-align: left;
+}
+#contact-us ul.partners,
+#contact-us-modal ul.partners,
+#buy-modal ul.partners {
   width: 240px;
   margin: 10px auto;
   font-size: 20px;
