@@ -258,6 +258,7 @@ header .info {
   -webkit-box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.33);
   box-shadow: 0px 5px 16px 1px rgba(0, 0, 0, 0.33);
+  cursor: auto;
 }
 #models .item-wrapper:hover {
   -webkit-box-shadow: 0px 5px 16px 8px rgba(0, 0, 0, 0.33);
