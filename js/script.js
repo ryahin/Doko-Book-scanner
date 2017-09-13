@@ -44,9 +44,6 @@ $(document).ready(function() {
         e.preventDefault();
         $('.politics-info').fadeToggle();
     });
-    $('.no-click').click(function(e){
-        e.preventDefault();
-    });
     $("#buy-selected-model").validate({
         rules: {
             user_email: {
