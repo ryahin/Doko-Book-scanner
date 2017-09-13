@@ -506,7 +506,97 @@
             </div>
         </div>
     </section>
-    <footer>
+    <section id="buy-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h3>Заявка</h3>
+                    <p>Вы можете разместить заявку на нужную модель<br>
+                    сканера DOKO, заполнив следующую форму.<br>
+                    (Или просто напишите нам по адресу <a href="mailto:stoik@stoik.ru">info@doc-cam.ru</a><br>
+                    или позвоните к нам в офис по телефону <nobr><b>(495) 366-90-06</b></nobr> и <nobr><b>366-45-08</b></nobr>.)</p>
+                    <form class="form-inline" id="buy-selected-model" action="submit.php" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="user_email" placeholder="Ваш e-mail" name="user_email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <select class="form-control" id="model" name="model">
+                                        <option value="1">DOKO ET16</option>
+                                        <option value="2">DOKO BS16</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="order_body" name="order_body" placeholder="Сообщение"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="form-message"></div>
+                                        <button id="button-send-by" type="submit" class="btn btn-danger">Отправить заявку</button>
+                                        <p class="send">
+                                            Нажимая кнопку "Отправить заявку", вы соглашаетесь с <a href="#" class="politics">политикой конфиденциальности</a>.
+                                        </p>
+                                        <div class="politics-info">
+                                            <p>
+                                                Настоящее Положение о политике конфиденциальности является официальным документом ООО «Стоик-М», расположенного по адресу: 105318, Москва, ул. Вельяминовская, д. 34 (далее — «Компания»), и определяет порядок обработки и защиты информации о физических лицах (далее — Пользователи), пользующихся сервисами, информацией, услугами, программами и продуктами интернет-сайта, расположенного на доменном имени <a href="http://www.book-scanner.ru">www.book-scanner.ru</a> (далее — Сайт).
+                                                <ol>
+                                                    <li>
+                                                        Компания через Сайт запрашивает и получает минимальный объем информации о Пользователе, не позволяющий его идентифицировать.
+                                                    </li>
+                                                    <li>
+                                                        Информация о Пользователе необходима Компании для осуществления обратной связи с Пользователем с целью ответа на отправляемые через Сайт вопросы и запросы, в том числе для выполнения размещаемых Пользователем заказов на продукцию или услуги Компании. 
+                                                    </li>
+                                                    <li>
+                                                        Предоставляя подобную информацию, Пользователь даёт Компании своё согласие на обработку и использование своих данных согласно ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. различными способами в целях, указанных в настоящем Положении.
+                                                    </li>
+                                                    <li>
+                                                        Компания использует предоставленную информацию о Пользователе только в целях:
+                                                        <ul>
+                                                            <li>ответа на запросы Пользователя в Компанию, в том числе с использованием средств электронной связи;</li>
+                                                            <li>оформления размещаемого Пользователем заказа в Компании;</li>
+                                                            <li>для выполнения Компанией своих обязательств перед Пользователем, в том числе для выполнения заказов.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        Компания обязуется не разглашать полученную от Пользователя информацию. При этом не считается нарушением обязательств разглашение информации в случае, когда обязанность такого раскрытия установлена требованиями действующего законодательства РФ.
+                                                    </li>
+                                                </ol>
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <p>
+                                            Вы также можете заказать сканер DOKO у одного из наших партнеров:
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-md-offset-3">
+                                                <ul class="partners">
+                                                    <li><a href="http://www.avrorus.ru" target="_blank">Avrorus</a></li>
+                                                    <li><a href="http://www.foroffice.ru" target="_blank">Foroffice</a></li>
+                                                    <li><a href="http://www.nera-msc.ru" target="_blank">Nera-Msc</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <ul class="partners">
+                                                    <li><a href="http://www.oftex.ru" target="_blank">Oftex</a></li>
+                                                    <li><a href="http://www.pult.ru" target="_blank">Pult</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="light-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-md-offset-2">

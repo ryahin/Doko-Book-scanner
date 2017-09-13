@@ -428,21 +428,25 @@ header .info {
 }
 #contact-us,
 #contact-us-modal,
-#buy-modal {
+#buy-modal,
+#buy-section {
   position: relative;
   margin-top: 70px;
 }
 #contact-us .container,
 #contact-us-modal .container,
-#buy-modal .container {
+#buy-modal .container,
+#buy-section .container {
   min-height: 300px;
 }
 #contact-us .modal-close,
 #contact-us-modal .modal-close,
 #buy-modal .modal-close,
+#buy-section .modal-close,
 #contact-us .buy-modal-close,
 #contact-us-modal .buy-modal-close,
-#buy-modal .buy-modal-close {
+#buy-modal .buy-modal-close,
+#buy-section .buy-modal-close {
   position: absolute;
   right: 10px;
   top: 10px;
@@ -452,7 +456,8 @@ header .info {
 }
 #contact-us h3,
 #contact-us-modal h3,
-#buy-modal h3 {
+#buy-modal h3,
+#buy-section h3 {
   margin-bottom: 5px;
   text-align: center;
   font-weight: 700;
@@ -461,49 +466,58 @@ header .info {
 }
 #contact-us p,
 #contact-us-modal p,
-#buy-modal p {
+#buy-modal p,
+#buy-section p {
   text-align: center;
   font-size: 14px;
 }
 #contact-us p.send,
 #contact-us-modal p.send,
-#buy-modal p.send {
+#buy-modal p.send,
+#buy-section p.send {
   font-size: 12px;
   margin-bottom: 10px;
 }
 #contact-us .glad-to-help,
 #contact-us-modal .glad-to-help,
-#buy-modal .glad-to-help {
+#buy-modal .glad-to-help,
+#buy-section .glad-to-help {
   width: 170px;
   margin: 5px auto;
 }
 #contact-us .glad-to-help p,
 #contact-us-modal .glad-to-help p,
-#buy-modal .glad-to-help p {
+#buy-modal .glad-to-help p,
+#buy-section .glad-to-help p {
   text-align: right;
 }
 #contact-us .glad-to-help p b,
 #contact-us-modal .glad-to-help p b,
-#buy-modal .glad-to-help p b {
+#buy-modal .glad-to-help p b,
+#buy-section .glad-to-help p b {
   font-size: 20px;
 }
 #contact-us .form-group,
 #contact-us-modal .form-group,
-#buy-modal .form-group {
+#buy-modal .form-group,
+#buy-section .form-group {
   width: 100%;
 }
 #contact-us .form-group input,
 #contact-us-modal .form-group input,
 #buy-modal .form-group input,
+#buy-section .form-group input,
 #contact-us .form-group select,
 #contact-us-modal .form-group select,
-#buy-modal .form-group select {
+#buy-modal .form-group select,
+#buy-section .form-group select {
   width: 100%;
   margin-top: 30px;
 }
 #contact-us button,
 #contact-us-modal button,
-#buy-modal button {
+#buy-modal button,
+#buy-section button {
   display: block;
   margin: 15px auto;
   padding: 5px 20px;
@@ -511,7 +525,8 @@ header .info {
 }
 #contact-us #order_body,
 #contact-us-modal #order_body,
-#buy-modal #order_body {
+#buy-modal #order_body,
+#buy-section #order_body {
   margin-top: 20px;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -520,7 +535,8 @@ header .info {
 }
 #contact-us .politics-info,
 #contact-us-modal .politics-info,
-#buy-modal .politics-info {
+#buy-modal .politics-info,
+#buy-section .politics-info {
   display: none;
   background-color: #fafafa;
   border: 1px solid #eee;
@@ -528,12 +544,14 @@ header .info {
 }
 #contact-us .politics-info > p,
 #contact-us-modal .politics-info > p,
-#buy-modal .politics-info > p {
+#buy-modal .politics-info > p,
+#buy-section .politics-info > p {
   text-align: left;
 }
 #contact-us ul.partners,
 #contact-us-modal ul.partners,
-#buy-modal ul.partners {
+#buy-modal ul.partners,
+#buy-section ul.partners {
   width: 240px;
   margin: 10px auto;
   font-size: 20px;
@@ -565,6 +583,7 @@ footer ul li {
 footer .btn {
   border: 2px solid red;
   padding: 5px;
+  background-color: #fff;
 }
 .clean-bg {
   background-color: #ffffff;
