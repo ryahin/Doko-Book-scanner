@@ -18,7 +18,7 @@ if (!$email) {
 	);
 } else {
 	$body = '<html><body>';
-	$body .= '<h1>Заявка на сайте DOKO!</h1>';
+	$body .= '<h1>Заявка на сайте Book-scanner.ru!</h1>';
 	$body .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
 	if ($email)
 		$body .= "<tr><td><strong>e-mail:</strong> </td><td>" . htmlentities($email) . "</td></tr>";
@@ -35,7 +35,8 @@ if (!$email) {
 
 	if (!mail (
 		'info@doc-cam.ru',
-		'Заявка на сайте DOKO',
+        'ilya.ryahin@gmail.com',
+		'Book-scanner.ru: Заяка на DOKO',
 		$body,
 		$headers
 	)) {
