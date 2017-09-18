@@ -8,7 +8,7 @@ $email 		= $_POST['user_email'] 		? strip_tags($_POST['user_email']) : '';
 $modelId 		= $_POST['model'] 		? strip_tags($_POST['model']) : '';
 $message	= $_POST['order_body']	? strip_tags($_POST['order_body']) : '';
 
-$models = array('DOKO ET16','DOKO BS16');
+$models = array('DOKO CZUR ET16','DOKO BS16');
 $model = isset($models[$modelId-1]) ? $models[$modelId-1] : '';
 
 if (!$email) {
@@ -34,8 +34,7 @@ if (!$email) {
 	$headers .= 'From: <info@doc-cam.ru>' . "\r\n";
 
 	if (!mail (
-		'info@doc-cam.ru',
-        'ilya.ryahin@gmail.com',
+		'info@doc-cam.ru, ilya.ryahin@gmail.com',
 		'Book-scanner.ru: Заяка на DOKO',
 		$body,
 		$headers
