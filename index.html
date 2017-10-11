@@ -529,7 +529,7 @@
                     сканера DOKO, заполнив следующую форму.<br>
                     (Или просто напишите нам по адресу <a href="mailto:stoik@stoik.ru">info@doc-cam.ru</a><br>
                     или позвоните к нам в офис по телефону <nobr><b>(495) 366-90-06</b></nobr> и <nobr><b>366-45-08</b></nobr>.)</p>
-                    <form class="form-inline" id="buy-selected-model" action="submit.php" method="post">
+                    <form class="form-inline" id="buy-selected-model-bottom" action="submit.php" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -538,7 +538,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <select class="form-control" id="model" name="model">
+                                    <select class="form-control" id="model-bottom" name="model">
+                                        <option value="0" selected="selected">Выбор модели</option>
                                         <option value="1">DOKO CZUR ET16</option>
                                         <option value="2">DOKO BS16</option>
                                     </select>
@@ -550,7 +551,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <div id="form-message"></div>
+                                        <div id="form-message-bottom"></div>
                                         <button id="button-send-by" type="submit" class="btn btn-danger">Отправить заявку</button>
                                         <p class="send">
                                             Нажимая кнопку "Отправить заявку", вы соглашаетесь с <a href="#" class="politics">политикой конфиденциальности</a>.
@@ -653,6 +654,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <select class="form-control" id="model" name="model">
+                                            <option value="0">Выбор модели</option>
                                             <option value="1">DOKO CZUR ET16</option>
                                             <option value="2">DOKO BS16</option>
                                         </select>

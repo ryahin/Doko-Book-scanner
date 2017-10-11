@@ -90,4 +90,50 @@ $(document).ready(function() {
             );
         }
     });
+    $("#buy-selected-model-bottom").validate({
+        rules: {
+            user_email: {
+                required: true,
+                email: true
+            },
+            model: {
+                required: true
+            }
+        },
+        // выводимые сообщения при нарушении соответствующих правил
+        messages: {
+            "user_email": {
+                required: "Необходимо указать почтовый ящик",
+                email: "Пожалуйста, укажите корректный почтовый ящик"
+            },
+            "model": {
+                required: "Необходимо выбрать модель сканера"
+            }
+        },
+
+        // указаваем обработчик
+        submitHandler: function(form) {
+            $.post(
+                'submit.php',
+                $(form).serialize(),
+                function(data) {
+                    if (data.message) {
+                        $('#form-message-bottom').html(data.message).css({
+                            'margin-top': '10px',
+                            'padding': '5px'
+                        });
+                    }
+                    if (data.success) {
+                        $('#form-message-bottom').removeClass('alert-danger');
+                        $('#form-message-bottom').addClass('alert-success');
+                        $(form).find('input').prop('disabled', true);
+                        $(form).find('textarea').prop('disabled', true);
+                    } else {
+                        $('#form-message-bottom').removeClass('alert-success');
+                        $('#form-message-bottom').addClass('alert-danger');
+                    }
+                }
+            );
+        }
+    });
 });
