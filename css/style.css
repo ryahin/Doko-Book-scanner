@@ -587,6 +587,11 @@ header .info {
 #documentation h2 {
   margin-bottom: 40px;
 }
+#documentation h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 footer .container {
   padding-top: 60px;
   min-height: 200px;
