@@ -592,6 +592,9 @@ header .info {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+#documentation iframe {
+  max-width: 100%;
+}
 footer .container {
   padding-top: 60px;
   min-height: 200px;
