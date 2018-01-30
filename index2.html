@@ -1,10 +1,3 @@
-<?php
-session_start();
-include("simple-php-captcha.php");
-$_SESSION['captcha'] = simple_php_captcha(array(
-    'characters' => 'ABCDEFGHJKLMNPRSTUVWXYZ23456789',
-));
-?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -585,7 +578,7 @@ $_SESSION['captcha'] = simple_php_captcha(array(
                                         <div id="form-message-bottom"></div>
                                         <div class="row">
                                             <div class="captcha-wrapper col-sm-4 col-sm-offset-4">
-                                                <img class="captcha-img" src="<?= $_SESSION['captcha']['image_src']; ?>">
+                                                <img class="captcha-img" src="">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" placeholder="Введите код" name="captcha">
                                                 </div>
@@ -709,7 +702,7 @@ $_SESSION['captcha'] = simple_php_captcha(array(
                                             <div id="form-message"></div>
                                             <div class="row">
                                                 <div class="captcha-wrapper col-sm-4 col-sm-offset-4">
-                                                    <img class="captcha-img" src="<?= $_SESSION['captcha']['image_src']; ?>">
+                                                    <img class="captcha-img" src="">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control" placeholder="Введите код" name="captcha">
                                                     </div>
