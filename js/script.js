@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    var updateCaptcha = function() {
+        $.get('reload-captcha.php', {}, function(data) {
+            var result = JSON.parse(data);
+            $('.captcha-img').attr('src', result.src);
+        });
+    }
+    updateCaptcha();
+
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -85,6 +93,7 @@ $(document).ready(function() {
                     } else {
                         $('#form-message').removeClass('alert-success');
                         $('#form-message').addClass('alert-danger');
+                        updateCaptcha();
                     }
                 }
             );
@@ -131,6 +140,7 @@ $(document).ready(function() {
                     } else {
                         $('#form-message-bottom').removeClass('alert-success');
                         $('#form-message-bottom').addClass('alert-danger');
+                        updateCaptcha();
                     }
                 }
             );
